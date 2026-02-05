@@ -1,0 +1,6 @@
+Failed in exactly one subject: 101 Arjun
+Passed in all subjects: 102 Meera
+Failed in exactly one subject: 103 Ravi
+Passed in all subjects: 104 Anita
+Students failed in exactly one subject: 2
+Students passed in all subjects: 2
