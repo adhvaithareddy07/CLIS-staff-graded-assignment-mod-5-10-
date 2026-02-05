@@ -1,0 +1,5 @@
+nano text.txt
+nano word_stats.sh
+chmod +x word_stats.sh
+./word_stats.sh text.txt
+./word_stats.sh text.txt > output.txt
