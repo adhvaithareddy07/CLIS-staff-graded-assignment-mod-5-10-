@@ -2,54 +2,70 @@ COMMAND 1: pwd
 
 OUTPUT: /mnt/c/Users/adhva/Desktop/CLIS SGA MOD 5-10/question 6
 
-EXPLANATION: This command shows the present working directory. It confirms execution is inside Question 6 folder.
+EXPLANATION: This command displays the current working directory. It confirms that work is being performed inside the Question 6 folder.
 
-COMMAND 2: nano text.txt
+COMMAND 2: nano input.txt
 
 OUTPUT:
-This is a sample text file
-This file is used to test word statistics
-This text file contains repeated words
-This is another sample text
 
-EXPLANATION: This command opens Nano editor to create a text file. The file contains sentences used for word analysis.
+This is a simple text file
 
-COMMAND 3: nano word_stats.sh
+This file is used for metrics testing
+
+Shell scripting is interesting
+
+EXPLANATION: This command opens Nano editor to create a text file containing sample sentences. The file is used as input for word analysis.
+
+COMMAND 3: nano metrics.sh
 
 OUTPUT: Script file created successfully
 
-EXPLANATION: This command creates a script that analyzes text content. The script calculates total words, unique words, and most frequent word.
+EXPLANATION: This command opens Nano editor to create a shell script that analyzes text data and calculates required word metrics.
 
-COMMAND 4: chmod +x word_stats.sh
+COMMAND 4: chmod +x metrics.sh
 
 OUTPUT: Execution permission granted
 
-EXPLANATION: This command allows the script to run. It assigns executable permission to the script file.
+EXPLANATION: This command provides execution permission to the script file. It allows the script to run as an executable program.
 
-COMMAND 5: ./word_stats.sh text.txt
+COMMAND 5: ./metrics.sh
 
 OUTPUT:
-Analyzing file: text.txt
-Total words: 14
-Unique words: 9
-Most frequent word: is
 
-EXPLANATION: This command executes the script. It analyzes the text file and calculates word-related statistics.
+Longest word: scripting
 
-COMMAND 6: ./word_stats.sh text.txt > output.txt
+Shortest word: a
 
-OUTPUT: Output saved in output.txt
+Average word length: 4.9
 
-EXPLANATION: This command redirects the analysis result into a file. It helps store results for documentation.
+Total unique words: 12
+
+EXPLANATION: This command executes the metrics.sh script. It processes the input file and calculates longest word, shortest word, average word length, and total number of unique words.
+
+COMMAND 6: ./metrics.sh > output.txt
+
+OUTPUT: Script output saved into output.txt file
+
+EXPLANATION: This command redirects script output into a text file. It stores results for documentation and submission.
 
 COMMAND 7: nano commands.txt
 
-OUTPUT: Commands list saved successfully
+OUTPUT: Commands saved successfully
 
-EXPLANATION: This command records all commands used during execution.
+EXPLANATION: This command opens Nano editor to record all commands executed during the task.
 
 COMMAND 8: ls
 
-OUTPUT: commands.txt output.txt q6 screenshot.png text.txt word_stats.sh
+OUTPUT:
 
-EXPLANATION: This command lists all files present in the directory. It confirms successful completion of the task.
+commands.txt
+
+input.txt
+
+metrics.sh
+
+output.txt
+
+q6 screenshot.png
+
+EXPLANATION: This command lists all files present in the directory. It confirms successful creation of required files and outputs.
