@@ -1,0 +1,27 @@
+cd "question 5"
+
+pwd
+
+mkdir dirA
+mkdir dirB
+
+echo "Hello from file1" > dirA/file1.txt
+echo "Common content" > dirA/file2.txt
+echo "Only in A" > dirA/fileA.txt
+
+echo "Hello from file1" > dirB/file1.txt
+echo "Different content" > dirB/file2.txt
+echo "Only in B" > dirB/fileB.txt
+
+ls dirA
+ls dirB
+
+nano sync.sh
+
+chmod +x sync.sh
+
+./sync.sh
+
+./sync.sh > output.txt
+
+ls

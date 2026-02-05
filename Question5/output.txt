@@ -1,0 +1,9 @@
+Files only in dirA:
+fileA.txt
+
+Files only in dirB:
+fileB.txt
+
+Comparing common files:
+file1.txt -> Contents MATCH
+file2.txt -> Contents DIFFER
