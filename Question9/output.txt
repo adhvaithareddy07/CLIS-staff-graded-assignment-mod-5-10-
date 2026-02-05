@@ -1,0 +1,6 @@
+Students scoring above 75:
+101 John 78
+102 Meera 92
+104 Anita 88
+Total students above 75:
+3

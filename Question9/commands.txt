@@ -1,0 +1,15 @@
+cd ..
+cd "question 9"
+pwd
+
+nano records.txt
+nano record_filter.sh
+
+chmod +x record_filter.sh
+
+./record_filter.sh records.txt
+
+./record_filter.sh records.txt > output.txt
+
+ls
+mkdir "screenshot q9"
