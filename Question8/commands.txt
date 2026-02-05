@@ -1,0 +1,19 @@
+cd "question 8"
+
+mkdir testDir
+
+echo "File one content" > testDir/file1.txt
+echo "File two content" > testDir/file2.txt
+echo "File three content" > testDir/file3.txt
+
+nano bg_move.sh
+
+chmod +x bg_move.sh
+
+./bg_move.sh testDir
+
+ls testDir/backup
+
+./bg_move.sh testDir > output.txt
+
+ls
