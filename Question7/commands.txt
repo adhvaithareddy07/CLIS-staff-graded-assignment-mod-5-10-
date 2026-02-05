@@ -1,0 +1,18 @@
+cd "question 7"
+
+nano input.txt
+
+nano patterns.sh
+
+chmod +x patterns.sh
+
+./patterns.sh
+
+cat vowels.txt
+cat consonants.txt
+cat mixed.txt
+
+./patterns.sh > output.txt
+
+ls
+
