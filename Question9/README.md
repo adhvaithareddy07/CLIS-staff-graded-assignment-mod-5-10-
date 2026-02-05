@@ -7,10 +7,15 @@ EXPLANATION: This command displays the current working directory. It confirms th
 COMMAND 2: nano records.txt
 
 OUTPUT:
+
 101 John 78
+
 102 Meera 92
+
 103 Ravi 65
+
 104 Anita 88
+
 105 Kiran 70
 
 EXPLANATION: This command opens Nano editor to create a file containing student records and marks.
@@ -30,10 +35,15 @@ EXPLANATION: This command makes the script executable. It allows the script to r
 COMMAND 5: ./record_filter.sh records.txt
 
 OUTPUT:
+
 Students scoring above 75:
+
 101 John 78
+
 102 Meera 92
+
 104 Anita 88
+
 Total students above 75: 3
 
 EXPLANATION: This command executes the script. It filters student records and counts students scoring above 75.
