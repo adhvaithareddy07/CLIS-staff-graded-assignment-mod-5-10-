@@ -1,0 +1,7 @@
+Sales Summary
+Laptop sold for 50000
+Mouse sold for 1500
+Keyboard sold for 2000
+Laptop sold for 55000
+Mouse sold for 1200
+Total Sales: 109700
