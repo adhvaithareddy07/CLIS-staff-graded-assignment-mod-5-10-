@@ -1,0 +1,8 @@
+john123@gmail.com
+abc@company.com
+invalid_email@.com
+user99@yahoo.com
+test@company
+hello123@service.com
+john123@gmail.com
+bad@email@domain.com

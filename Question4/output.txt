@@ -1,0 +1,2 @@
+Valid emails saved in valid.txt
+Invalid emails saved in invalid.txt
