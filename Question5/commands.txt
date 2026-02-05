@@ -1,0 +1,5 @@
+nano numbers.txt
+nano number_stats.sh
+chmod +x number_stats.sh
+./number_stats.sh numbers.txt
+./number_stats.sh numbers.txt > output.txt
