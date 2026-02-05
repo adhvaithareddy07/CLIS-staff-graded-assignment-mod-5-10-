@@ -1,0 +1,14 @@
+cd "question 6"
+
+nano input.txt
+
+nano metrics.sh
+
+chmod +x metrics.sh
+
+./metrics.sh
+
+./metrics.sh > output.txt
+
+ls
+

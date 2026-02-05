@@ -1,0 +1,4 @@
+Longest word: interesting
+Shortest word: a
+Average word length: 4.64706
+Total unique words: 13
