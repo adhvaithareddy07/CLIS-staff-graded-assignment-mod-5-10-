@@ -2,56 +2,111 @@ COMMAND 1: pwd
 
 OUTPUT: /mnt/c/Users/adhva/Desktop/CLIS SGA MOD 5-10/question 7
 
-EXPLANATION: This command displays the current working directory. It confirms that execution is taking place inside the Question 7 folder.
+EXPLANATION: This command displays the current working directory. It confirms that work is being performed inside the Question 7 folder.
 
-COMMAND 2: nano students.txt
+COMMAND 2: nano input.txt
 
 OUTPUT:
-Arjun 85
-Meera 92
-Ravi 67
-Anita 45
-Kiran 78
 
-EXPLANATION: This command opens Nano editor to create a file containing student names and marks. The data is used to assign grades.
+aeiou
 
-COMMAND 3: nano grade_calculator.sh
+bcdfg
+
+hello
+
+sky
+
+orange
+
+AEIOU
+
+rhythm
+
+plane
+
+EXPLANATION: This command opens Nano editor to create a text file containing sample words. The words are used to test vowel and consonant pattern detection.
+
+COMMAND 3: nano patterns.sh
 
 OUTPUT: Script file created successfully
 
-EXPLANATION: This command creates a shell script that reads student marks and assigns grades based on score ranges.
+EXPLANATION: This command opens Nano editor to create a shell script that analyzes words and categorizes them into vowel-only, consonant-only, and mixed patterns.
 
-COMMAND 4: chmod +x grade_calculator.sh
+COMMAND 4: chmod +x patterns.sh
 
 OUTPUT: Execution permission granted
 
-EXPLANATION: This command allows the script to run directly in the terminal by assigning executable permission.
+EXPLANATION: This command provides execution permission to the script file. It allows the script to run as an executable program.
 
-COMMAND 5: ./grade_calculator.sh
+COMMAND 5: ./patterns.sh
 
 OUTPUT:
-Arjun scored 85 -> Grade: B
-Meera scored 92 -> Grade: A
-Ravi scored 67 -> Grade: C
-Anita scored 45 -> Grade: F
-Kiran scored 78 -> Grade: B
+Files created: vowels.txt consonants.txt mixed.txt
 
-EXPLANATION: This command executes the script. It reads student data and calculates grades using conditional statements.
+EXPLANATION: This command executes the patterns.sh script. It reads input words and writes them into separate files based on vowel and consonant patterns.
 
-COMMAND 6: ./grade_calculator.sh > output.txt
+COMMAND 6: cat vowels.txt
 
-OUTPUT: Grade results saved in output.txt
+OUTPUT:
 
-EXPLANATION: This command redirects the script output into a file. It helps preserve results for submission.
+aeiou
 
-COMMAND 7: nano commands.txt
+aeiou
+
+EXPLANATION: This command displays words containing only vowels. It confirms that vowel pattern detection is working correctly.
+
+COMMAND 7: cat consonants.txt
+
+OUTPUT:
+
+bcdfg
+
+sky
+
+rhythm
+
+EXPLANATION: This command displays words containing only consonants. It verifies consonant pattern detection.
+
+COMMAND 8: cat mixed.txt
+
+OUTPUT:
+
+hello
+
+orange
+
+plane
+
+EXPLANATION: This command displays words containing both vowels and consonants and starting with a consonant. It verifies mixed pattern detection.
+
+COMMAND 9: ./patterns.sh > output.txt
+
+OUTPUT: Script output saved into output.txt file
+
+EXPLANATION: This command redirects script output into a text file. It stores results for documentation and submission.
+
+COMMAND 10: nano commands.txt
 
 OUTPUT: Commands saved successfully
 
-EXPLANATION: This command stores all executed commands into a documentation file.
+EXPLANATION: This command opens Nano editor to record all commands executed during the task.
 
-COMMAND 8: ls
+COMMAND 11: ls
 
-OUTPUT: commands.txt grade_calculator.sh output.txt q7 screenshot.png students.txt
+OUTPUT:
 
-EXPLANATION: This command lists all files present in the directory. It confirms that all required files were created successfully.
+commands.txt
+
+input.txt
+
+patterns.sh
+
+output.txt
+
+vowels.txt
+
+consonants.txt
+
+mixed.txt
+
+EXPLANATION: This command lists all files present in the directory. It confirms successful creation of required script, output files.
