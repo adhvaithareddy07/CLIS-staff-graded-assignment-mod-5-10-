@@ -2,61 +2,95 @@ COMMAND 1: pwd
 
 OUTPUT: /mnt/c/Users/adhva/Desktop/CLIS SGA MOD 5-10/question 5
 
-EXPLANATION: This command shows the current working directory. It confirms that work is being performed inside Question 5 folder.
+EXPLANATION: This command displays the current working directory. It confirms that work is being done inside the Question 5 folder.
 
-COMMAND 2: nano numbers.txt
+COMMAND 2: mkdir dirA dirB
+
+OUTPUT: (No output displayed)
+
+EXPLANATION: This command creates two directories named dirA and dirB. These directories will be compared using the shell script.
+
+COMMAND 3: echo "Hello from file1" > dirA/file1.txt
+echo "Common content" > dirA/file2.txt
+echo "Only in A" > dirA/fileA.txt
+
+OUTPUT: (No output displayed)
+
+EXPLANATION: These commands create sample files inside dirA. They are used to test comparison between directories.
+
+COMMAND 4: echo "Hello from file1" > dirB/file1.txt
+echo "Different content" > dirB/file2.txt
+echo "Only in B" > dirB/fileB.txt
+
+OUTPUT: (No output displayed)
+
+EXPLANATION: These commands create sample files inside dirB. Some files are identical to dirA and some are different to test script functionality.
+
+COMMAND 5: ls dirA
 
 OUTPUT:
-10
-20
-30
-40
-50
-60
-70
-80
-89
-90
+file1.txt
+file2.txt
+fileA.txt
 
-EXPLANATION: This command opens Nano editor to create a file containing numbers. These numbers are used for statistical calculations.
+EXPLANATION: This command lists all files inside dirA. It verifies that files were created successfully.
 
-COMMAND 3: nano number_stats.sh
+COMMAND 6: ls dirB
 
-OUTPUT: Script file created successfully
+OUTPUT:
+file1.txt
+file2.txt
+fileB.txt
 
-EXPLANATION: This command creates a shell script for performing numerical calculations. The script calculates total numbers, sum, average, maximum, and minimum values.
+EXPLANATION: This command lists all files inside dirB. It confirms that test files exist for comparison.
 
-COMMAND 4: chmod +x number_stats.sh
+COMMAND 7: nano sync.sh
+
+OUTPUT: Script file opened in Nano editor
+
+EXPLANATION: This command opens Nano editor to create and write the shell script that compares both directories.
+
+COMMAND 8: chmod +x sync.sh
 
 OUTPUT: Execution permission granted
 
-EXPLANATION: This command allows the script to run as an executable program. It is required before running the script.
+EXPLANATION: This command provides execution permission to the script file. It allows the script to run as an executable program.
 
-COMMAND 5: ./number_stats.sh numbers.txt
+COMMAND 9: ./sync.sh
 
 OUTPUT:
-Total numbers: 10
-Sum: 439
-Average: 43
-Maximum: 90
-Minimum: 10
+Files only in dirA:
+fileA.txt
 
-EXPLANATION: This command executes the script. It reads numbers from the file and calculates statistical values.
+Files only in dirB:
+fileB.txt
 
-COMMAND 6: ./number_stats.sh numbers.txt > output.txt
+Comparing common files:
+file1.txt -> Contents MATCH
+file2.txt -> Contents DIFFER
 
-OUTPUT: Results stored in output.txt
+EXPLANATION: This command executes the sync.sh script. It compares files in both directories, identifies unique files, and checks whether common files have matching contents.
 
-EXPLANATION: This command redirects calculated results into an output file. It preserves the execution output for submission.
+COMMAND 10: ./sync.sh > output.txt
 
-COMMAND 7: nano commands.txt
+OUTPUT: Script output saved into output.txt file
 
-OUTPUT: Commands list saved successfully
+EXPLANATION: This command redirects the script output into a text file. It stores results for documentation and submission purposes.
 
-EXPLANATION: This command stores all executed commands into a documentation file.
+COMMAND 11: nano commands.txt
 
-COMMAND 8: ls
+OUTPUT: Commands saved successfully
 
-OUTPUT: commands.txt number_stats.sh numbers.txt output.txt q5 screenshot.png
+EXPLANATION: This command opens Nano editor to record all executed commands. It helps maintain documentation of the process.
 
-EXPLANATION: This command lists all files inside the directory. It confirms that all required files are present..
+COMMAND 12: ls
+
+OUTPUT:
+commands.txt
+dirA
+dirB
+output.txt
+sync.sh
+q5 screenshot.png
+
+EXPLANATION: This command lists all files present in the directory. It confirms successful creation of required script, output, directories, and screenshot.
