@@ -1,0 +1,5 @@
+Arjun scored 85 → Grade: B
+Meera scored 92 → Grade: A
+Ravi scored 67 → Grade: C
+Anita scored 45 → Grade: F
+Kiran scored 78 → Grade: B
