@@ -59,4 +59,4 @@ COMMAND 8: ls
 
 OUTPUT: commands.txt number_stats.sh numbers.txt output.txt q5 screenshot.png
 
-EXPLANATION: This command lists all files inside the directory. It confirms that all required files are present.
+EXPLANATION: This command lists all files inside the directory. It confirms that all required files are present..
