@@ -1,0 +1,10 @@
+cd ..
+cd "question 9"
+pwd
+nano zombie_prevention.c
+sudo apt update
+sudo apt install gcc -y
+gcc zombie_prevention.c -o zombie_prevention
+./zombie_prevention
+./zombie_prevention > output.txt
+ls
