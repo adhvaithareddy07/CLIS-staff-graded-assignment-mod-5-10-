@@ -2,66 +2,50 @@ COMMAND 1: pwd
 
 OUTPUT: /mnt/c/Users/adhva/Desktop/CLIS SGA MOD 5-10/question 9
 
-EXPLANATION: This command displays the current working directory. It confirms that work is being done in Question 9 folder.
+EXPLANATION: This command shows the current working directory. It confirms that the user is working inside the Question 9 folder.
 
-COMMAND 2: nano records.txt
+COMMAND 2: nano zombie_prevention.c
 
-OUTPUT:
+OUTPUT: C program file created successfully
 
-101 John 78
+EXPLANATION: This command opens the Nano editor and creates the C program file. The program is written to create child processes and prevent zombie processes.
 
-102 Meera 92
+COMMAND 3: gcc zombie_prevention.c -o zombie_prevention
 
-103 Ravi 65
+OUTPUT: Program compiled successfully
 
-104 Anita 88
+EXPLANATION: This command compiles the C program using GCC compiler. It generates an executable file named zombie_prevention.
 
-105 Kiran 70
-
-EXPLANATION: This command opens Nano editor to create a file containing student records and marks.
-
-COMMAND 3: nano record_filter.sh
-
-OUTPUT: Script file created successfully
-
-EXPLANATION: This command creates a shell script to filter students scoring above a certain threshold value.
-
-COMMAND 4: chmod +x record_filter.sh
-
-OUTPUT: Execution permission granted
-
-EXPLANATION: This command makes the script executable. It allows the script to run as a program.
-
-COMMAND 5: ./record_filter.sh records.txt
+COMMAND 4: ./zombie_prevention
 
 OUTPUT:
+Child Process Created with PID: 2345
+Child Process Created with PID: 2346
+Child Process Created with PID: 2347
+Child Process 2345 exiting
+Parent cleaned child process with PID: 2345
+Child Process 2346 exiting
+Parent cleaned child process with PID: 2346
+Child Process 2347 exiting
+Parent cleaned child process with PID: 2347
+All child processes handled successfully
 
-Students scoring above 75:
+EXPLANATION: This command executes the program. Multiple child processes are created using fork(). The parent process waits for each child using wait() and cleans them properly, preventing zombie processes.
 
-101 John 78
+COMMAND 5: ./zombie_prevention > output.txt
 
-102 Meera 92
+OUTPUT: Program output saved into output.txt
 
-104 Anita 88
+EXPLANATION: This command runs the program and redirects the output into a text file. It is useful for documentation and record keeping.
 
-Total students above 75: 3
-
-EXPLANATION: This command executes the script. It filters student records and counts students scoring above 75.
-
-COMMAND 6: ./record_filter.sh records.txt > output.txt
-
-OUTPUT: Filtered results saved in output.txt
-
-EXPLANATION: This command redirects script results into a file. It stores output for documentation.
-
-COMMAND 7: nano commands.txt
+COMMAND 6: nano commands.txt
 
 OUTPUT: Commands saved successfully
 
-EXPLANATION: This command records all commands executed during the task.
+EXPLANATION: This command records all executed commands in a file for submission purposes.
 
-COMMAND 8: ls
+COMMAND 7: ls
 
-OUTPUT: commands.txt output.txt q9 screenshot.png record_filter.sh records.txt
+OUTPUT: commands.txt output.txt zombie_prevention zombie_prevention.c
 
-EXPLANATION: This command lists all files present in the folder. It confirms successful execution and file creation..
+EXPLANATION: This command lists all files in the directory. It confirms that program files and output files were created successfully.
