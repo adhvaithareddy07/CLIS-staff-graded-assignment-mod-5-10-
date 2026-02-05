@@ -1,5 +1,0 @@
-nano students.txt
-nano grade_calculator.sh
-chmod +x grade_calculator.sh
-./grade_calculator.sh
-./grade_calculator.sh > output.txt
