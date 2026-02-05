@@ -1,0 +1,5 @@
+File detected.
+ 1  5 24 sample.txt
+Directory detected.
+Total files: 4
+Total .txt files: 2

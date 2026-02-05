@@ -1,0 +1,5 @@
+nano analyze.sh
+chmod +x analyze.sh
+echo "Hello this is test file" > sample.txt
+./analyze.sh sample.txt
+./analyze.sh .
