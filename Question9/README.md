@@ -54,4 +54,4 @@ COMMAND 8: ls
 
 OUTPUT: commands.txt output.txt q9 screenshot.png record_filter.sh records.txt
 
-EXPLANATION: This command lists all files present in the folder. It confirms successful execution and file creation.
+EXPLANATION: This command lists all files present in the folder. It confirms successful execution and file creation..
