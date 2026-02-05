@@ -1,0 +1,5 @@
+nano log_analyzer.sh
+chmod +x log_analyzer.sh
+nano sample.log
+./log_analyzer.sh sample.log
+./log_analyzer.sh sample.log > output.txt
