@@ -1,4 +1,0 @@
-Analyzing file: text.txt
-Total words: 14
-Unique words: 9
-Most frequent word:       4 is
