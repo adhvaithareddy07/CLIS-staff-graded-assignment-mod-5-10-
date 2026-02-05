@@ -1,4 +1,0 @@
-linux is powerful
-linux is flexible
-linux is widely used
-shell scripting is useful
