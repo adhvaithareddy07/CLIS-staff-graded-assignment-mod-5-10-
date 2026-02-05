@@ -1,0 +1,3 @@
+Parent process running indefinitely. PID: 8692
+
+Parent received SIGTERM. Cleaning up and exiting gracefully.

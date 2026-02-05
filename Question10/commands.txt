@@ -1,0 +1,8 @@
+cd ..
+cd "question 10"
+pwd
+nano signal_handling.c
+gcc signal_handling.c -o signal_handling
+./signal_handling
+./signal_handling > output.txt
+ls
