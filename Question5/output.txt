@@ -1,5 +1,0 @@
-Total numbers: 10
-Sum: 439
-Average: 43
-Maximum: 90
-Minimum: 10
