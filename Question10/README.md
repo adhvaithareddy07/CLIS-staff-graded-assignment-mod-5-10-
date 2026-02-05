@@ -2,70 +2,42 @@ COMMAND 1: pwd
 
 OUTPUT: /mnt/c/Users/adhva/Desktop/CLIS SGA MOD 5-10/question 10
 
-EXPLANATION: This command displays the current working directory. It confirms execution inside Question 10 folder.
+EXPLANATION: This command displays the current working directory. It confirms that the program is being executed inside the Question 10 folder.
 
-COMMAND 2: nano sales.txt
+COMMAND 2: nano signal_handling.c
 
-OUTPUT:
+OUTPUT: C program created successfully
 
-Laptop 50000
+EXPLANATION: This command opens the Nano editor to create a C program that demonstrates signal handling using parent and child processes.
 
-Mouse 1500
+COMMAND 3: gcc signal_handling.c -o signal_handling
 
-Keyboard 2000
+OUTPUT: Compilation successful
 
-Laptop 55000
+EXPLANATION: This command compiles the C program and generates an executable file named signal_handling.
 
-Mouse 1200
-
-EXPLANATION: This command opens Nano editor to create a file containing sales records. The file is used for calculating total sales.
-
-COMMAND 3: nano sales_summary.sh
-
-OUTPUT: Script file created successfully
-
-EXPLANATION: This command creates a shell script that reads sales records and calculates total sales amount.
-
-COMMAND 4: chmod +x sales_summary.sh
-
-OUTPUT: Execution permission granted
-
-EXPLANATION: This command assigns executable permission to the script so it can run directly in the terminal.
-
-COMMAND 5: ./sales_summary.sh sales.txt
+COMMAND 4: ./signal_handling
 
 OUTPUT:
+Parent process running indefinitely. PID: 3456
+Parent received SIGTERM. Cleaning up and exiting gracefully.
 
-Sales Summary
+EXPLANATION: This command executes the program. The first child sends SIGTERM after 5 seconds and the parent handles it gracefully.
 
-Laptop sold for 50000
+COMMAND 5: ./signal_handling > output.txt
 
-Mouse sold for 1500
+OUTPUT: Program output saved in output.txt
 
-Keyboard sold for 2000
+EXPLANATION: This command redirects the program output into a file for documentation and submission.
 
-Laptop sold for 55000
-
-Mouse sold for 1200
-
-Total Sales: 109700
-
-EXPLANATION: This command executes the script and calculates total sales by adding values from the file.
-
-COMMAND 6: ./sales_summary.sh sales.txt > output.txt
-
-OUTPUT: Sales results saved in output.txt
-
-EXPLANATION: This command redirects script output into a file for documentation and submission..
-
-COMMAND 7: nano commands.txt
+COMMAND 6: nano commands.txt
 
 OUTPUT: Commands saved successfully
 
-EXPLANATION: This command records all commands executed during the task.
+EXPLANATION: This command records all commands executed during the program development.
 
-COMMAND 8: ls
+COMMAND 7: ls
 
-OUTPUT: commands.txt output.txt q10 screenshot.png sales.txt sales_summary.sh
+OUTPUT: commands.txt output.txt signal_handling signal_handling.c 
 
-EXPLANATION: This command lists all files in the directory and confirms successful completion of the task.
+EXPLANATION: This command lists all files present in the directory and confirms successful execution of the program.
