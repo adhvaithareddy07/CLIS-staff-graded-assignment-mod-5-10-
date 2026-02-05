@@ -1,0 +1,12 @@
+cd ..
+cd "question 8"
+pwd
+
+nano data.txt
+nano frequency_counter.sh
+
+chmod +x frequency_counter.sh
+
+./frequency_counter.sh data.txt
+
+./frequency_counter.sh data.txt > output.txt

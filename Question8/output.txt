@@ -1,0 +1,7 @@
+Analyzing file: data.txt
+Total entries: 9
+Frequency count:
+      3 banana
+      3 apple
+      2 orange
+      1 grapes
