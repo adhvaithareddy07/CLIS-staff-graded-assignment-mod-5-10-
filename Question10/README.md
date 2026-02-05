@@ -56,7 +56,7 @@ COMMAND 6: ./sales_summary.sh sales.txt > output.txt
 
 OUTPUT: Sales results saved in output.txt
 
-EXPLANATION: This command redirects script output into a file for documentation and submission.
+EXPLANATION: This command redirects script output into a file for documentation and submission..
 
 COMMAND 7: nano commands.txt
 
